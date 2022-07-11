@@ -46,6 +46,7 @@ const onInputSearch=(event)=>{
     .catch(error =>{
         Notiflix.Notify.warning('Oops, there is no country with that name')
         removeMarkUpList()
+        removeMarkUpCountryCard()
         return
     })
 }
